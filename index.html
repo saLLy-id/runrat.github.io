@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rat Run</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url('главныйфон.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 20px 60px;
+            font-size: 36px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border: 3px solid #fff;
+            border-radius: 10px;
+            margin: 40px 0;
+            transition: all 0.3s ease;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .play-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-bottom: 20px;
+            font-size: 16px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            to {
+                text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>RAT RUN</h1>
+        <a href="main.html" class="play-button">PLAY</a>
+    </div>
+    <div class="footer">Created by Sally</div>
+</body>
+</html> 
